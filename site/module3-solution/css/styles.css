@@ -1,9 +1,116 @@
-h1 {
-	color: rgb(255, 0, 0);
+* {
+  box-sizing: border-box;
+}
 
+body {
+	font-size:16px;
+	background-color:#fff;
+	color: #000;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+/** Header **/
+
+#navigation {
+	border-radius:0;
+	background-color: #b3b3b3;
+	border:2px solid #000;
+}
+
+.navbar-header .navbar-brand span {
+	color:#000;
+	font-size: 2.25em;
+	font-weight: 500;
+}
+
+/* main content */
+
+#main-content #title-main {
+	margin-bottom:40px;
+	font-size: 2.25em;
+	font-weight: 500;
+}
+
+section{
+	background-color: #b3b3b3;
+	padding:10px;
 
 }
 
-p {
-	font-family: sans-serif;
+section > h3 {
+	font-size: 1.5em;
+	font-weight: 500;
+	margin-top:0;
 }
+
+section h3 a{
+	color: #000;
+}
+
+p.section-end {
+	line-height: 0px;
+}
+
+p.section-end a {
+	text-decoration:underline;
+}
+
+/*Small devices Tablets*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+	#section3 {
+		margin-top:30px;
+	}
+}
+
+/* mobile version - Extra small devices */
+
+@media (max-width: 767px) {
+ 
+ /* Header */
+
+ .navbar-default .navbar-nav {
+  	margin-top:0;
+  }
+
+ #collapsable-nav {
+	border-top:2px solid #000;
+}
+
+.navbar-default .navbar-nav>li {
+	border-bottom:2px solid #000;
+	background-color:#414141;
+}
+
+.navbar-default .navbar-nav>li>a {
+  	color:#000;
+  	text-align:center;
+  	font-weight:500;
+	color:#fff;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+	color:#000;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 2px solid #000;
+}
+
+.navbar-collapse {
+	margin-bottom:-10px;
+}
+
+#section2, #section3 {
+	margin-top:30px;
+}
+
+}
+
+
+
+
+
+
+
+
